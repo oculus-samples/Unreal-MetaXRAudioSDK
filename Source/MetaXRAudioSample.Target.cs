@@ -28,6 +28,6 @@ public class MetaXRAudioSampleTarget : TargetRules
         Type = TargetType.Game;
         DefaultBuildSettings = BuildSettingsVersion.Latest;
 
-        ExtraModuleNames.AddRange( new string[] { "MetaXRAudioSample" } );
+        ExtraModuleNames.AddRange(new string[] { "MetaXRAudioSample" });
     }
 }
