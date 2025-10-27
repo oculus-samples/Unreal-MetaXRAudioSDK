@@ -82,8 +82,9 @@ void UHelicopterController::TickComponent(float DeltaTime, ELevelTick TickType, 
   UpAim = FloatZPos + FVector::UpVector * Straightness * 100;
   if (FollowCheckpoints) {
     Timer += DeltaTime;
-    Goal->SetActorLocation(FMath::Lerp(
-        Checkpoints[TargetCheckpointN]->GetActorLocation(), Checkpoints[NextCheckpointN]->GetActorLocation(), Timer / IntervalTime));
+    Goal->SetActorLocation(
+        FMath::Lerp(
+            Checkpoints[TargetCheckpointN]->GetActorLocation(), Checkpoints[NextCheckpointN]->GetActorLocation(), Timer / IntervalTime));
     if (Timer >= IntervalTime) {
       Timer = 0;
       // If it's not the case to restart the looping trajectory...
