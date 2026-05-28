@@ -98,3 +98,9 @@ The project should build successfully.
 The Unreal-MetaXRAudioSDK repository including all packages and SDKs, is released under the Oculus SDK License.  You may obtain a copy of the SDK License at https://developer.oculus.com/licenses/oculussdk/
 
 Helicopter audio samples are sourced from https://github.com/viktorphoenix/fieldrecordings-ccby4.  The License for the helicopter audio samples can be found in the Third-party folder.
+
+## AI coding agents
+
+This repo is wired up for AI coding agents — `AGENTS.md`, `.vscode/extensions.json`, `.mcp.json`, `.cursor/rules/`, and a few client-specific dotfiles surface the **Meta Horizon** VS Code/Cursor extension, the `hzdb` MCP server, and the Meta Quest skill set automatically.
+
+Full toolchain, including Unreal skills and per-client install instructions: [github.com/meta-quest/agentic-tools](https://github.com/meta-quest/agentic-tools).
